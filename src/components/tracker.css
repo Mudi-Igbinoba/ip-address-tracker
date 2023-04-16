@@ -1,0 +1,210 @@
+/* - Very Dark Gray: hsl(0, 0%, 17%)
+- Dark Gray: hsl(0, 0%, 59%) */
+
+section {
+    position: relative;
+}
+
+#hero {
+    padding: 1em;
+    padding-bottom: 9em;
+    text-align: center;
+    background-image: url(../assets/images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+@media (min-width: 650px) {
+    #hero {
+        padding: 1em;
+        padding-bottom: 3.5em;
+    }
+}
+
+#hero .container {
+    width: 100%;
+    position: relative;
+}
+
+#hero h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+#hero .tracker-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.18);
+    margin-bottom: 22px;
+}
+
+#hero .tracker-form input {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    width: 82%;
+    border: none;
+    background-color: #fff;
+    padding: 1em;
+    padding-right: 0.5;
+    font-size: 1.125rem;
+    color: hsl(0, 0%, 17%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+#hero .tracker-form input::placeholder {
+    font-size: 16px;
+    color: hsl(0, 0%, 59%);
+}
+
+#hero .tracker-form button {
+    background-color: #000;
+    border: none;
+    height: 58px;
+    width: 18%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+#hero .tracker-form button:hover,
+#hero .tracker-form button:focus {
+    background-color: hsl(0, 0%, 17%);
+}
+
+#hero .tracker-form button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+    background-color: hsl(0, 0%, 17%);
+}
+
+@media (min-width: 576px) {
+    #hero .tracker-form input {
+        width: 88%;
+    }
+
+    #hero .tracker-form button {
+        width: 12%;
+    }
+}
+
+@media (min-width: 650px) {
+    #hero .tracker-form {
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 900px) {
+    #hero .tracker-form {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero .tracker-form {
+        width: 36%;
+    }
+
+    #hero .tracker-form input {
+        width: 89%;
+    }
+
+    #hero .tracker-form button {
+        width: 11%;
+    }
+}
+
+#hero .details {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2em 0;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#hero .details p {
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#hero .details h3 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    word-wrap: break-word;
+}
+
+#hero .details .isp h3 {
+    margin-bottom: 0;
+}
+
+#hero .details .line {
+    display: none;
+}
+
+@media (min-width: 650px) {
+    #hero .details {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 1.5em;
+        text-align: left;
+    }
+
+    #hero .details h3 {
+        margin-bottom: 0;
+    }
+
+    #hero .details div {
+        max-width: 24%;
+    }
+}
+
+@media (min-width: 768px) {
+    #hero .details .line {
+        display: block;
+        width: 1px;
+        height: inherit;
+        background-color: hsla(0, 0%, 59%, 0.384);
+    }
+}
+
+@media (min-width: 900px) {
+    #hero .details {
+        width: 85%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #hero .details {
+        justify-content: space-around;
+    }
+
+    #hero .details h3 {
+        font-size: 1.5em;
+    }
+}
+
+#map {
+    background-color: #000;
+    height: 500px;
+}

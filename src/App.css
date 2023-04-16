@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 17%);
+}
+
+/* Footer */
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 1.5em 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    transition: 150ms;
+}
+
+.attribution a:hover,
+.attribution a:focus,
+.attribution a:active {
+    color: hsl(0, 0%, 59%);
+}
